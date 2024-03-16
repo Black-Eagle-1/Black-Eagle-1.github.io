@@ -10,6 +10,27 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@font-face {
+  font-family: basicFont;
+  src: url(../fonts/iansui/Iansui-Regular.ttf);
+}
+@font-face {
+  font-family: h1Font;
+  src: url(../fonts/Forta-Free_Display_Font_Andrzej_Wroz_150220/Forta.ttf);
+}
+@font-face {
+  font-family: h3Font;
+  src: url(../fonts/genjyuugothic-x-20150607/GenJyuuGothicX-Bold.ttf);
+}
+@font-face {
+  font-family: subheadingFont;
+  src: url(../fonts/nanifont-master/webfont/NaniFont-Regular.woff2);
+}
+@font-face {
+  font-family: lyricsFont;
+  src: url(../fonts/Cubic_11/fonts/ttf/Cubic_11_1.100_R.ttf);
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -64,7 +85,7 @@
     rgba(255, 255, 255, 0.15),
     rgba(255, 255, 255, 0)
   );
-  --bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI,
+  --bs-body-font-family: basicFont, -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
     Segoe UI Symbol, Noto Color Emoji;
   --bs-body-font-size: 1rem;
@@ -127,17 +148,27 @@ h5,
 .h5,
 h4,
 .h4,
-h3,
-.h3,
 h2,
 .h2,
 h1,
 .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "h1Font", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #343a40;
+}
+
+h3,
+.h3 {
+  font-family: "h3Font", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  margin-top: 0;
+  margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
@@ -3877,7 +3908,7 @@ fieldset:disabled .btn {
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
-  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-font-size: 1.5rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-nav-link-padding-x: 0.5rem;
@@ -3926,6 +3957,7 @@ fieldset:disabled .btn {
   --bs-nav-link-padding-x: 0;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
+  --bs-nav-link-font-size: 1.25rem;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
   --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
@@ -11205,9 +11237,15 @@ p.lead {
   font-weight: 400;
 }
 
+p.lyrics {
+  font-family: "lyricsFont", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+  font-family: "subheadingFont", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
@@ -11323,7 +11361,6 @@ section.resume-section .resume-section-content {
   outline: 0.5rem solid #dac9a6;
   box-shadow: 0 0 0 2rem skyblue;
   border-radius: 12px;
-  font: bold 1rem sans-serif;
   margin: 2rem;
   padding: 1rem;
   outline-offset: 0.5rem;
@@ -11348,3 +11385,4 @@ section.resume-section .resume-section-content {
 #myBtn:hover {
   background-color: #43362a; /* Add a dark-grey background on hover */
 }
+
