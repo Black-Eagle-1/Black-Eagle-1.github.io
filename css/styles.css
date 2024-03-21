@@ -12,7 +12,7 @@
  */
 @font-face {
   font-family: basicFont;
-  src: url(../fonts/iansui/Iansui-Regular.ttf);
+  src: url(../fonts/NotoSansTC-Light.ttf);
 }
 @font-face {
   font-family: h1Font;
@@ -11386,3 +11386,27 @@ section.resume-section .resume-section-content {
   background-color: #43362a; /* Add a dark-grey background on hover */
 }
 
+#soundImage {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+}
+
+.icon1 {
+  width: 2.8rem;
+  height: 2.4rem;
+}
+
+.radius1 {
+  border-radius: 50%;
+}
+
+#cat {
+  height: 16rem;
+  width: 10rem;
+}
+
+#dog {
+  height: 15rem;
+  width: 20rem;
+}

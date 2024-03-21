@@ -1,0 +1,10 @@
+.brandlogo {
+  width: 3rem; /* 設置圖片寬度 */
+  height: 3.8rem; /* 設置圖片高度 */
+  border-radius: 50%; /* 將圓角半徑設置為圖片寬度的一半 */
+  overflow: hidden; /* 確保圖片在圓形框內顯示 */
+}
+
+.bgcolor {
+  background-color: #3b3936;
+}
