@@ -124,12 +124,12 @@ p.lyrics {
   box-sizing: border-box;
 } */
 /* body {
-  padding: 2rem;
-  font-family: "Roboto", sans-serif;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  background-color: #060606;
+  /* padding: 2rem;
+  font-family: "Roboto", sans-serif; */
+/* min-height: 100vh; */
+/* display: grid; */
+/* place-items: center;
+  background-color: #060606; 
 } */
 ul.skills {
   width: min(100%, 60rem);
@@ -208,6 +208,8 @@ ul.skills li.card .content {
     text-align: left;
   }
 }
+
+/* 其他 */
 
 nav {
   background-image: url("../images/background1.jpg");

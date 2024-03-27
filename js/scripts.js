@@ -48,12 +48,29 @@ function scrollFunction() {
   }
 }
 
-function playSound() {
-  var sound = document.getElementById("clickSound");
-  sound.play();
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function playSound() {
-  var sound = document.getElementById("catsound");
-  sound.play();
-}
+// 聲音
+document.getElementById("soundImage").addEventListener("click", function () {
+  var audio = document.getElementById("clickSound");
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+});
+
+document.getElementById("catsoundimg").addEventListener("click", function () {
+  var audio = document.getElementById("catsound");
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+});
