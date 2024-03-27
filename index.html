@@ -128,7 +128,20 @@
             <img id="dog" src="./images/chiwawa.png" alt="" /> -->
           </div>
           <audio id="clickSound" src="./sound/duckSound.MP3"></audio>
-          <p>(圖片來源:未經羅伊然同意，擅自取得)</p>
+          <p>(圖片來源:未經羅伊然同意，擅自取得)<br />(更:圖片經羅伊然同意)</p>
+          <div>
+            <img
+              id="catsoundimg"
+              src="./images/catsound.jpg"
+              alt="Image"
+              onclick="playSound()"
+              title=""
+            />
+            <!-- <img id="cat" src="./bgimages/footer.jpg" alt="" />
+            <img id="dog" src="./images/chiwawa.png" alt="" /> -->
+          </div>
+          <audio id="catsound" src="./sound/cat_meow.mp3"></audio>
+          <div class="lead mb-5"></div>
 
           <p class="lead mb-5">
             我住新北的西邊，每天通勤來往世新大學。高中就讀也思社會設計自學團(現名也思實驗教育)。擅長剪輯、簡報製作、網頁設計(X)、攝影。曾剪輯過紀錄片，也參加影片比賽獲得銅獎。不太喜歡運動但打打羽毛球、桌球或者去戶外走走還是可以的。
@@ -338,22 +351,30 @@
           <h2 class="mb-5">Skills</h2>
           <div class="subheading mb-3">Programming Languages & Tools</div>
           <ul class="list-inline dev-icons">
-            <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-            <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-            <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
             <li class="list-inline-item">
-              <i class="fa-brands fa-elementor"></i>
+              <i class="fab fa-html5 skills"></i>
             </li>
-            <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
             <li class="list-inline-item">
-              <i class="fa-brands fa-python"></i>
+              <i class="fab fa-css3-alt skills"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-js-square skills"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fa-brands fa-elementor skills"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fab fa-wordpress skills"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="fa-brands fa-python skills"></i>
             </li>
           </ul>
-          <div class="subheading mb-3">Workflow</div>
+          <div class="subheading mb-3">Specialties</div>
           <ul class="skills">
-            <li class="card" style="--color: #ececec; --bg-color: #e98b43">
+            <li class="card" style="--color: #ececec; --bg-color: #abd3f5">
               <div class="icon"><i class="fa-solid fa-house"></i></div>
-              <div class="title">Lorem ipsum</div>
+              <div class="title">影音後製</div>
               <div class="content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 iaculis pretium euismod. Aenean elit sapien, varius quis ante
@@ -362,9 +383,9 @@
                 interdum in ut ante.
               </div>
             </li>
-            <li class="card" style="--color: #ececec; --bg-color: #c23d2a">
+            <li class="card" style="--color: #ececec; --bg-color: #88aecf">
               <div class="icon"><i class="fa-solid fa-gear"></i></div>
-              <div class="title">Lorem ipsum</div>
+              <div class="title">影片拍攝</div>
               <div class="content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 iaculis pretium euismod. Aenean elit sapien, varius quis ante
@@ -373,11 +394,14 @@
                 interdum in ut ante.
               </div>
             </li>
-            <li class="card" style="--color: #ececec; --bg-color: #842c2a">
+            <li
+              class="card specialties"
+              style="--color: #ececec; --bg-color: #6c97bd"
+            >
               <div class="icon">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
-              <div class="title">Lorem ipsum</div>
+              <div class="title">簡報製作</div>
               <div class="content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
                 iaculis pretium euismod. Aenean elit sapien, varius quis ante
@@ -386,26 +410,35 @@
                 interdum in ut ante.
               </div>
             </li>
-            <li class="card" style="--color: #ececec; --bg-color: #022f46">
+            <li class="card" style="--color: #ececec; --bg-color: #5b85a8">
               <div class="icon"><i class="fa-solid fa-chart-column"></i></div>
-              <div class="title">剪片</div>
+              <div class="title">氣候變遷課程</div>
               <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                iaculis pretium euismod. Aenean elit sapien, varius quis ante
-                sit amet, tincidunt finibus orci. Ut consectetur imperdiet quam,
-                at ultrices mi rutrum ut. Sed semper justo quis nisl ornare
-                interdum in ut ante.
+                <ul>
+                  <li>
+                    2021.3.27 ~ 2021.3.29： 田頭國小參訪暨塑膠微粒課程宣導
+                  </li>
+                  <li>2021.4.28 ~ 2021.4.30： 田頭國小減塑公益畢業旅行</li>
+                  <li>2022.3.25 ~ 2022.3.26： 台東瑞源國小氣候變遷課程</li>
+                </ul>
               </div>
             </li>
-            <li class="card" style="--color: #ececec; --bg-color: #032437">
+            <li class="card" style="--color: #ececec; --bg-color: #37658c">
               <div class="icon"><i class="fa-solid fa-circle-star"></i></div>
-              <div class="title">Lorem ipsum</div>
+              <div class="title">營隊帶領</div>
               <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                iaculis pretium euismod. Aenean elit sapien, varius quis ante
-                sit amet, tincidunt finibus orci. Ut consectetur imperdiet quam,
-                at ultrices mi rutrum ut. Sed semper justo quis nisl ornare
-                interdum in ut ante.
+                <ul>
+                  <li>
+                    2022.8.08 ~ 2022.8.10：
+                    田頭國小「大手牽小手，防癌起步走」營隊
+                  </li>
+                  <li>
+                    2022.8.22 ~ 2022.8.24：
+                    香田國小「大手牽小手，防癌起步走」營隊
+                  </li>
+                  <li>2023.7.24 ~ 2023.7.28： 台東瑞源國小防癌宣導營隊</li>
+                  <li>2023.8.07 ~ 2023.8.11： 沙連敦服務學習暨戶外體驗營</li>
+                </ul>
               </div>
             </li>
           </ul>

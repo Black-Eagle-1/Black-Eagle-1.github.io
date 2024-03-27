@@ -90,6 +90,9 @@ p.lyrics {
   width: 200px;
   height: auto;
   cursor: pointer;
+  border: 0.5rem outset #c5a5e4;
+  outline: 0.5rem solid #7e63f7;
+  margin-bottom: 2rem;
 }
 
 .icon1 {
@@ -209,4 +212,16 @@ ul.skills li.card .content {
 nav {
   background-image: url("../images/background1.jpg");
   background-position: 0rem;
+}
+
+.skills {
+  color: #22727a;
+}
+
+#catsoundimg {
+  height: 15rem;
+  width: 12 rem;
+  border-radius: 25%;
+  border: 0.5rem outset #a5dee4;
+  outline: 0.5rem solid #dac9a6;
 }
