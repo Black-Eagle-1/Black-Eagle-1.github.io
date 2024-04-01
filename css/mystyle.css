@@ -118,19 +118,19 @@ p.lyrics {
 @import url("https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
-/* body {
-  /* padding: 2rem;
-  font-family: "Roboto", sans-serif; */
-/* min-height: 100vh; */
-/* display: grid; */
-/* place-items: center;
-  background-color: #060606; 
-} */
+}
+body {
+  /* padding: 2rem; */
+  /* font-family: "Roboto", sans-serif; */
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  /* background-color: #060606; */
+}
 ul.skills {
   width: min(100%, 60rem);
   overflow: hidden;
@@ -208,6 +208,9 @@ ul.skills li.card .content {
     text-align: left;
   }
 }
+div.icon {
+  font-size: 2rem;
+}
 
 /* 其他 */
 
@@ -231,4 +234,11 @@ nav {
 
 #duckdescribe {
   margin-bottom: 2rem;
+}
+
+.video {
+  color: antiquewhite;
+}
+.video:hover {
+  color: rgb(72, 59, 26);
 }
