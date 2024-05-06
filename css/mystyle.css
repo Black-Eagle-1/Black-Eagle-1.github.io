@@ -18,6 +18,10 @@
   font-family: lyricsFont;
   src: url(../fonts/Cubic_11/fonts/web/Cubic_11_1.100_R.woff);
 }
+@font-face {
+  font-family: footerFont;
+  src: url(../fonts/GenJyuuGothic-Medium.ttf);
+}
 
 :root {
   --bs-link-color: #6699a1;
@@ -326,4 +330,18 @@ th {
   .column {
     width: 100%;
   }
+}
+
+.footers {
+  color: #6a4c9c;
+  font-family: "footerFont";
+  /* border-bottom: 2px solid black;
+  border-width: 2px 2px 2px 2px;
+  border-color: red;
+  border-style: solid;
+  border-radius: 30%; */
+}
+
+.footerfont {
+  color: #6a4c9c;
 }
